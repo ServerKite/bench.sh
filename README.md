@@ -15,8 +15,15 @@ The applications are as follows:
 - GNU wget tool
 - Python
 
-### Colourful Suggestions & Ideas
-Suggestions on making this script better are more then welcome. Would love to hear possible ways of improving the codes and structure.
+### Theory & Practice
 
-### Transparency
+Before pushing a new version or fixing some bits of codes, we usually take the script for a test drive. We utilized a few VPS providers, virtualizations and linux distributions. 
+
+- RamNode (Atlanta, Georgia) OpenVZ SSD VPS with Debian 32-bit
+- prgmr (San Jose, California) Xen VPS with CentOS 32-bit
+
+### Colourful Suggestions & Ideas
+Would love to hear possible ways of improving the codes, structure and aerodynamics. 
+
+### Paper Transparency
 ServerKite's bench.sh is a simple script based on Argiris Kamaras's linux server info script. 
