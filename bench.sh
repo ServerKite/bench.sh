@@ -32,7 +32,7 @@ echo
 echo
 echo -e "\e[1;92mSpeed Test:\e[0m"
 echo
-echo -e "Would you like to perform an extensive Speed Test? Recommended for Dedicated Servers. [y/n]: "
+echo "Would you like to perform an extensive Speed Test? Recommended for Dedicated Servers. [y/n]: "
 read sptest
 if [[ $sptest == [yY] ]]; then
 echo
