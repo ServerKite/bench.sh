@@ -2,7 +2,7 @@
 
 clear
 echo
-echo "\e[1;92mbench.sh started...\e[0m"
+echo -e "\e[1;92mbench.sh started...\e[0m"
 echo
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
