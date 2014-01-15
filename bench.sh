@@ -29,6 +29,7 @@ echo
 echo "I/O Speed: $io"
 echo
 
+sleep 5
 echo
 echo -e "\e[1;92mSpeed Test:\e[0m"
 echo
