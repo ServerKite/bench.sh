@@ -29,13 +29,12 @@ echo
 echo "I/O Speed: $io"
 echo
 
-sleep 5
 echo
 echo -e "\e[1;92mSpeed Test:\e[0m"
 echo
-echo -n "Would you like to perform an extensive Speed Test? Recommended for Dedicated Servers. [y/n]: "
+echo -e "Would you like to perform an extensive Speed Test? Recommended for Dedicated Servers. [y/n]: "
 read sptest
-if [[ $sptest == [y] || $sptest == [Y] ]]; then
+if [[ $sptest == [yY] ]]; then
 echo
 echo -e "\e[1mRunning extensive speed tests...\e[0m"
 echo
