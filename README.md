@@ -11,10 +11,10 @@ You should run this script as "root" access user and should install the mentione
 
 The applications are as follows:
 
-- Git
-- <strike>IOPing</strike>
-- <strike>GNU wget tool</strike>
-- <strike>Python</strike>
+- Git (git/git-core)
+- ~~IOPing~~
+- ~~GNU wget tool~~
+- ~~Python~~
 
 ### Theory & Practice
 
