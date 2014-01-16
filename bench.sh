@@ -36,7 +36,7 @@ echo "Would you like to perform an extensive Speed Test? Recommended for Dedicat
 read sptest
 if [[ $sptest == [yY] ]]; then
 echo
-echo -e "\e[1mRunning extensive speed tests...\e[0m"
+echo "Running extensive speed tests..."
 echo
 atlnap=$( wget -O /dev/null http://www.netdepot.com/speedtest/100MB.BIN 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "AtlantaNAP, Georgia, Atlanta, USA (100MB): $atlnap "
@@ -245,7 +245,7 @@ echo "WorldStream, Naaldwijk, Netherlands (100MB): $wsnl"
 else #speed test else statement
 
 echo
-echo -e "\e[1mRunning basic speed test...\e[0m";
+echo "Running basic speed test...";
 echo
 
 sixsyncnj=$( wget -O /dev/null http://6sync.com/100mb.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
