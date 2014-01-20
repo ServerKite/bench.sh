@@ -16,6 +16,14 @@ The applications are as follows:
 - ~~GNU wget tool~~
 - ~~Python~~
 
+
+### Pimp-my-Kite
+
+The main script (bench.sh) by default, comes with 100MB speed test files/links. — We have gathered a list of [10MB](https://github.com/ServerKite/bench.sh/wiki/10MB-Speed-Tests) and [1GB](https://github.com/ServerKite/bench.sh/wiki/1GB-Speed-Tests) speed test files/links where you can add on to the script. Where to add it? We assume you're clever enough to figure that one out ;)
+
+Hint: after line 40, before line 204.
+
+
 ### Theory & Practice
 
 Before pushing a new version or fixing some bits of codes, we usually take the script for a test drive. We utilized various virtualizations and linux distributions.
