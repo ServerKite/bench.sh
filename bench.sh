@@ -211,6 +211,18 @@ echo
 sixsyncnj=$( wget -O /dev/null http://6sync.com/100mb.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "6Sync, Weehawken, New Jersey, USA (100MB): $sixsyncnj"
 
+anynodemi=$( wget -O /dev/null http://anynode.net/100mb.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "anyNode, Detroit, Michigan, USA (100MB): $anynodemi"
+
+buyvmlv=$( wget -O /dev/null http://speedtest.lv.buyvm.net/100mb.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "BuyVM, Las Vegas, Nevada, USA (100MB): $buyvmlv"
+
+buyvmny=$( wget -O /dev/null http://speedtest.ny.buyvm.net/100mb.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "BuyVM, New Jersey, New York, USA (100MB): $buyvmny"
+
+crissicfl=$( wget -O /dev/null http://lg.crissic.net/100MB.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "Crissic, Jacksonville, Florida, USA (100MB): $crissicfl"
+
 dony=$( wget -O /dev/null http://speedtest-ny1.digitalocean.com/100mb.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "DigitalOcean, New York City, New York, USA (100MB): $dony"
 
@@ -244,8 +256,27 @@ echo "Linode, Dallas, Texas, USA (100MB): $lntx"
 lnca=$( wget -O /dev/null http://speedtest.fremont.linode.com/100MB-fremont.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Linode, Fremont, California, USA (100MB): $lnca"
 
+prometeusit=$( wget -O /dev/null http://mirrors.prometeus.net/test/test100.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "Prometeus, Milan, Italy (100MB): $prometeusit"
+
+prometeustx=$( wget -O /dev/null http://lg-dallas.prometeus.net/100MB.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "Prometeus, Dallas, Texas, USA (100MB): $prometeustx"
+
+prometeusin=$( wget -O /dev/null http://lg-pune.prometeus.net/100MB.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "Prometeus, Pune, India (100MB): $prometeusin"
+
+rnatl=$( wget -O /dev/null http://test.atl.ramnode.com/100MB.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "RamNode, Atlanta, Georgia, USA (100MB): $rnatl"
+
+rnseawa=$( wget -O /dev/null http://test.sea.ramnode.com/100MB.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "RamNode, Seattle, Washington, USA (100MB): $rnseawa"
+
+rnnl=$( wget -O /dev/null http://test.nl.ramnode.com/100MB.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+echo "RamNode, Alblasserdam, Netherlands (100MB): $rnnl"
+
 wtchi=$( wget -O /dev/null http://speedtest.wiredtree.com/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "WiredTree, Chicago, Illinois, USA (100MB): $wtchi"
+
 
 echo
 fi #end speed test
