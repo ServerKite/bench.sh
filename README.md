@@ -37,5 +37,13 @@ Here are some of the VPS providers along with the virtualization and OS flavor t
 ### Colourful Suggestions & Ideas
 Would love to hear possible ways of improving the codes, structure and aerodynamics. 
 
+
+### The Kite Factory
+
+Our main factory or in other words repository is hosted with vpsBoard! — In support of vpsBoard, we have moved our main-nightly-repo to: http://git.vpsboard.com/ServerKite/bench
+
+This GitHub Repository will remain as our 'mirror-repo' to serve the once who would like "SSL". We also host our main site via GitHub Pages.
+
+
 ### Paper Transparency
 ServerKite's bench.sh is a simple script based on Argiris Kamaras's linux server info script. 
