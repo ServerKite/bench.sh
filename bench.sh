@@ -88,21 +88,6 @@ echo "GoRack, Jacksonville, Florida, USA (100MB): $gorackfl"
 hivelocity=$( wget -O /dev/null http://speedtest.hivelocity.net/100MB.file 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Hivelocity, Tampa, Florida, USA (100MB): $hivelocity "
 
-inapsg=$( wget -O /dev/null http://mirrors.sin3.sg.voxel.net/speed_test/download_test.tar 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Internap, Singapore, Singapore (10MB): $inapsg"
-
-inaptx=$( wget -O /dev/null http://mirrors.dal2.us.voxel.net/speed_test/download_test.tar 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Internap, Dallas, Texas, USA (10MB): $inaptx"
-
-inapsj=$( wget -O /dev/null http://mirrors.sjc1.us.voxel.net/speed_test/download_test.tar 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Internap, San Jose, California, USA (10MB): $inapsj"
-
-inapnl=$( wget -O /dev/null http://mirrors.ams2.nl.voxel.net/speed_test/download_test.tar 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Internap, Amsterdam, Netherlands (10MB): $inapnl"
-
-incerotx=$( wget -O /dev/null http://mrtg.incero.com/test.tar 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Incero, Dallas, Texas, USA (100MB): $incerotx"
-
 joedc=$( wget -O /dev/null http://joesdatacenter.com/wp-content/uploads/100MB.zip 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Joe's Datacenter, Kansas City, Missouri, USA (100MB): $joedc "
 
