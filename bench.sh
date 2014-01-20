@@ -43,8 +43,8 @@ echo "AtlantaNAP, Georgia, Atlanta, USA (100MB): $atlnap "
 atlanticfl=$( wget -O /dev/null http://www.atlantic.net/wp-content/uploads/speed-test/100MB_Test.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Atlantic.Net, Orlando, Florida, USA (100MB): $atlanticfl"
 
-cstx=$( wget -O /dev/null http://mercury.dal.corespace.com/100mb_testfile.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "CoreSpace, Dallas, Texas, USA (100MB): $cstx"
+#cstx=$( wget -O /dev/null http://mercury.dal.corespace.com/100mb_testfile.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+#echo "CoreSpace, Dallas, Texas, USA (100MB): $cstx"
 
 coloatatl=$( wget -O /dev/null http://speed.atl.coloat.com/100mb.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Colo@, Atlanta, Georgia, USA (100MB): $coloatatl"
@@ -61,8 +61,8 @@ echo "Colo@, Phoenix, Arizona, USA (100MB): $coloatphx"
 choopa=$( wget -O /dev/null http://speedtest.choopa.net/100MBtest.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Choopa, Piscataway, New Jersey, USA (100MB) $choopa"
 
-data102co=$( wget -O /dev/null http://speed.data102.com/bigfile.txt 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Data102, Colorado Springs, Colorado (1GB): $data102co"
+#data102co=$( wget -O /dev/null http://speed.data102.com/bigfile.txt 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+#echo "Data102, Colorado Springs, Colorado (1GB): $data102co"
 
 dskc=$( wget -O /dev/null http://www.datashack.net/speedtest/100MB.zip 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Datashack, Kansas City, Missouri, USA (100MB): $dskc"
@@ -70,44 +70,20 @@ echo "Datashack, Kansas City, Missouri, USA (100MB): $dskc"
 dsix=$( wget -O /dev/null http://37.252.235.199/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "DATASIX, Vienna, Austria (100MB): $dsix"
 
-enzuchi=$( wget -O /dev/null http://199.193.252.200/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Enzu, Chicago, Illinois, USA (100MB): $enzuchi"
+#enzuchi=$( wget -O /dev/null http://199.193.252.200/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+#echo "Enzu, Chicago, Illinois, USA (100MB): $enzuchi"
 
-enzutx=$( wget -O /dev/null http://199.193.250.29/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Enzu, Dallas, Texas, USA (100MB) : $enzutx"
+#enzutx=$( wget -O /dev/null http://199.193.250.29/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+#echo "Enzu, Dallas, Texas, USA (100MB) : $enzutx"
 
-enzula=$( wget -O /dev/null http://199.48.68.9/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Enzu, Los Angeles, California, USA (100MB): $enzula"
+#enzula=$( wget -O /dev/null http://199.48.68.9/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+#echo "Enzu, Los Angeles, California, USA (100MB): $enzula"
 
 fhlv=$( wget -O /dev/null http://199.47.210.50/100mbtest.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Fiberhub, Los Vegas, Nevada, USA (100MB): $fhlv"
 
 gorackfl=$( wget -O /dev/null http://lg.gorack.net/100MB.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "GoRack, Jacksonville, Florida, USA (100MB): $gorackfl"
-
-hdfl=$( wget -O /dev/null http://72.29.70.131/1gbfile.tgz 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "HostDime, Orlando, Florida, USA (1GB): $hdfl"
-
-hdla=$( wget -O /dev/null http://198.136.57.226:8080/1gbfile.tgz 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "HostDime, Los Angeles, California, USA (1GB): $hdla"
-
-hdindia=$( wget -O /dev/null http://109.73.166.2/1gbfile.tgz 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "HostDime, New Delhi, India (1GB): $hdindia"
-
-hduk=$( wget -O /dev/null http://109.73.162.6/1gbfile.tgz 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "HostDime, London, United Kingdom (1GB): $hduk"
-
-hdnl=$( wget -O /dev/null http://109.73.174.10/1gbfile.tgz 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "HostDime, Amsterdam, Netherlands (1GB): $hdnl"
-
-hdpabz=$( wget -O /dev/null http://187.45.182.231/1gbfile.tgz 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "HostDime, Paraiba, Brazil (1GB): $hdpabz"
-
-hdspbz=$( wget -O /dev/null http://187.45.185.3/1gbfile.tgz 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "HostDime, Sao Paulo, Brazil (1GB): $hdspbz"
-
-hdflmex=$( wget -O /dev/null http://201.151.147.2/1gbfile.tgz 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "HostDime, Guadalajara, Mexico  (1GB): $hdmex"
 
 hivelocity=$( wget -O /dev/null http://speedtest.hivelocity.net/100MB.file 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Download Hivelocity, Tampa, Florida, USA (100MB): $hivelocity "
