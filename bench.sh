@@ -86,7 +86,7 @@ gorackfl=$( wget -O /dev/null http://lg.gorack.net/100MB.test 2>&1 | awk '/\/dev
 echo "GoRack, Jacksonville, Florida, USA (100MB): $gorackfl"
 
 hivelocity=$( wget -O /dev/null http://speedtest.hivelocity.net/100MB.file 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "Download Hivelocity, Tampa, Florida, USA (100MB): $hivelocity "
+echo "Hivelocity, Tampa, Florida, USA (100MB): $hivelocity "
 
 inapsg=$( wget -O /dev/null http://mirrors.sin3.sg.voxel.net/speed_test/download_test.tar 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "Internap, Singapore, Singapore (10MB): $inapsg"
@@ -235,8 +235,8 @@ echo "DigitalOcean, San Francisco, California, USA (100MB): $dosf"
 donl=$( wget -O /dev/null http://speedtest-ams1.digitalocean.com/100mb.test 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "DigitalOcean, Amsterdam, Netherlands (100MB): $donl"
 
-gnetil=$( wget -O /dev/null http://www.gigenet.com/files/100MB.zip 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
-echo "GigeNET, Arlington Heights, Illinois, USA (100MB): $gnetil"
+#gnetil=$( wget -O /dev/null http://www.gigenet.com/files/100MB.zip 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
+#echo "GigeNET, Arlington Heights, Illinois, USA (100MB): $gnetil"
 
 wlmi=$( wget -O /dev/null http://www.liquidweb.com/data/100mb.bin 2>&1 | awk '/\/dev\/null/ {speed=$3 $4} END {gsub(/\(|\)/,"",speed); print speed}' )
 echo "LiquidWeb, Lansing, Michigan, USA (100MB): $lwmi"
